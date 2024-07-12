@@ -44,6 +44,12 @@ body {
     font-size: 1.5rem;
 }
 
+.txt a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
 button {
     padding: 1.5rem 3rem 1.5rem 3rem;
     border-radius: 5px;
@@ -155,7 +161,7 @@ span {
         width: 100%;
     }
 
-    .txt p {
+    .txt a {
         margin-top: -1rem;
         cursor: pointer;
     }
