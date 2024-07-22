@@ -8,23 +8,32 @@
 </head>
 <body>
 
-    <div class="page">
+    <div class="login-page hide">
+        <img src="./imgs/whatsapp-line.png" alt="">
+        <input type="text" id="username" placeholder="username">
+        <button onclick="login()">login in</button>
+    </div>
+
+
+    <div class="page hide">
         <div class="footer-top">
-            <img class="logo" src="./imgs/grid-outline.svg" alt="" onclick="Logonave()">
+            <img class="logo" src="./imgs/grid-outline.svg" alt="">
             <div class="txt">
-                <a href="/inicio" onclick="routes()">início</a>
-                <a href="/certificados" onclick="routes()">certificados</a>
-                <a href="/projetos" onclick="routes()">projetos</a>
-                <a href="/sobre" onclick="routes()">sobre mim</a>
+                
+                <a onclick="alerta()">Sobre mim</a>
+                <a onclick="alerta()">Certificados</a>
+                <a onclick="alerta()">Projetos</a>
+                <a onclick="alerta()">Feedbacks</a>
+            
             </div>
-            <button>contrate-me</button>
+            <button>Contrate-me</button>
         </div>
 
         <div class="page-home">
             <div class="texts">
-                <h2>seja bem-vindo(a)</h2>
-                <h1>olá, me chamo <span>Joao</span>, <br> web developer</h1>
-                <p>estou começando minha carreira como web developer. Durante meus
+                <h2>Seja bem-vindo(a)</h2>
+                <h1>Olá, me chamo <span>João</span>, <br> web developer</h1>
+                <p>Estou começando minha carreira como web developer. Durante meus
                     estudos, aprendi a criar sites e aplicações usando
                     HTML, CSS, JavaScript, e estou aprendendo frameworks como React. <br> Também
                     adquiri conhecimentos em backend com Node.js e bancos
@@ -39,7 +48,7 @@
 
         <div class="projetos">
             <div class="imagens-project">
-                <h2>projetos</h2>
+                <h2>Projetos</h2>
                 <li>
                     <img class="responsiv" src="./imgs/Captura de tela 2024-04-03 110928.png" alt="">
                     <div>
@@ -122,9 +131,52 @@
             </div>
         </div>
 
+        <div class="logos">
+
+            <div class="imglogos">
+                <div>
+                    <img src="./imgs/instagram-line.png" alt="">
+                    <p>instagram</p>
+                </div>
+                <div>
+                    <img src="./imgs/mail-line.png" alt="">
+                    <p>email</p>    
+                </div>
+                    <div>
+                    <img src="./imgs/whatsapp-line.png" alt="">
+                    <p>whatsapp</p>
+                </div>
+            </div>
+
+            <table>
+
+                <tr>
+                    <td class="perfil">
+                        <img src="./imgs/instagram-line.png" alt="">
+                        <h1 class="perfilname">JoaoP</h1>
+                    </td>
+                    <td class="feed">
+                        <input type="text" placeholder="digite algum comentário">
+                        <button>enviar feedback</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="perfil">
+                        <img src="./imgs/instagram-line.png" alt="">
+                        <h1 class="perfilname">JoaoP</h1>
+                    </td>
+                    <td class="feed">
+                        <input type="text" placeholder="digite algum comentário">
+                        <button>enviar feedback</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
     </div>
 
-
-    <script src="js/script.js"></script>
+    <script src="/script.js" type="module"></script>
 </body>
 </html>
