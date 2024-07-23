@@ -1,8 +1,4 @@
-class users {
-    
-    names() {
-        const usernameGit = document.querySelector('')
-    }
+export class users {
 
     creathtml() {
         const tr = document.createElement('tr')

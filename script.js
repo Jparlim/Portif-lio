@@ -1,23 +1,22 @@
+import { users } from "./pi.js"
+
 let buttonContrate = document.querySelector('.footer-top button').addEventListener('click', () => {
     open('https://www.linkedin.com/in/joao-paulo-aparecido-rosa-3377a226a/')
 })
-
 
 function alerta() {
     alert('Este projeto está em desenvolvimento!')
 }
 
-function login() {
-    const username = document.querySelector('#username')
-    // document.querySelector('.login-page .hide').classList.remove('hide')
-    // document.querySelector('.page .hide').classList.remove('hide')    
-
-    if(username !== '') {
-        console.log('certo')
+function user() {
+    const { value } = document.querySelector('#username')
+    if(value === '') {
+        alert('insira um nome!')
     } else {
-        console.log('erro')
+        console.log("ola")
+        document.querySelector('.page hide').classList.remove('hide')
     }
 }
 
-window.login = () => login()
+window.user = () => user()
 window.alerta = () => alerta()

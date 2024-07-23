@@ -394,7 +394,7 @@ tr {
 
 /* pagina de login */
 
-.login-page {
+.loginPage {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -421,12 +421,12 @@ tr {
     background-color: rgb(0, 3, 62);
 }
 
-.login-page .hide{
+.loginPage .hide{
     display: none;
     opacity: 0;
 }
 
-.login-page input {
+.loginPage input {
     padding: 1.2rem 2rem;
     border: none;
     border-radius: 2px;
