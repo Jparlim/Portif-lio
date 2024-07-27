@@ -331,8 +331,9 @@ tr {
 }
 
 .perfil img {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
 }
 
 .perfil h1 {
@@ -348,7 +349,8 @@ tr {
 .feed input {
     border: none;
     border-radius: 5px;
-    padding: 1.3rem 5rem;
+    width: 25rem;
+    padding: 1.3rem;
     outline: none;
 }
 
@@ -448,6 +450,10 @@ tr {
 
     visibility: 1;
     opacity: 1;
+}
+
+.loginPage h1 {
+    text-align: center;
 }
 
 .loginPage.hide{

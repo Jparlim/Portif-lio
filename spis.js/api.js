@@ -1,10 +1,8 @@
 export class users {
     constructor(root) {
         this.root = document.querySelector(root)
-
         this.table = this.root.querySelector('table')
     }
-
 }
 
 export class usuario extends users {
@@ -13,36 +11,36 @@ export class usuario extends users {
     
         this.update()
         this.user()
-
-        this.createsrc()
-
     }
 
-    async createsrc() {
-        
+    createsrc() {
         let { value } = document.querySelector('#username')
 
         const criate = this.criatehtml()
-
+    
         criate.querySelector('.perfil img').src = `https://github.com/${value}.png`
-            
         this.table.append(criate)
-
+        criate.querySelector('.perfilname').innerText = `${value}`       
+    
+        return value
     }
        
     user() {
         document.querySelector('.loginPage button').onclick = () => {
-            
-            if(this.value === '') {
+
+            const valor = document.querySelector('#username').value;
+
+            if(valor === '') {
                 alert('insira um nome!')
             } else {
                 document.querySelector('.loginPage').classList.add('hide')
                 document.querySelector('.page.hide').classList.remove('hide')
+
+                this.createsrc()
             }
         }
     }
 
-    
     update() {
         this.removeAlltr()
     }
@@ -69,6 +67,4 @@ export class usuario extends users {
 
         return tr
     }
-
-
 }
