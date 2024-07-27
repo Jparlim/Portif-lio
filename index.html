@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <script src="spis.js/apiRoot.js" type="module" defer></script>
+
     <title>SITE PESSOAL</title>
 </head>
 <body>
-
-    <div class="loginPage hide">
+                        <!-- tirar o hide -->
+    <div class="loginPage">
         <img src="./imgs/whatsapp-line.png" alt="">
-        <input type="text" id="username" placeholder="username">
-        <button onclick="user()">login in</button>
+        <h1>entre com o nickname do github!</h1>
+        <input type="text" id="username" placeholder="username from github">
+        <button>login in</button>
     </div>
 
-
+                <!-- colocar o hide -->
     <div class="page hide">
         <div class="footer-top">
             <img class="logo" src="./imgs/grid-outline.svg" alt="">
@@ -31,7 +35,7 @@
 
         <div class="page-home">
             <div class="texts">
-                <h2>Seja bem-vindo(a)</h2>
+                <h2>Seja bem-vindo</h2>
                 <h1>Olá, me chamo <span>João</span>, <br> web developer</h1>
                 <p>Estou começando minha carreira como web developer. Durante meus
                     estudos, aprendi a criar sites e aplicações usando
@@ -148,35 +152,24 @@
                 </div>
             </div>
 
-            <table>
-
-                <tr>
-                    <td class="perfil">
-                        <img src="./imgs/instagram-line.png" alt="">
-                        <h1 class="perfilname">JoaoP</h1>
-                    </td>
-                    <td class="feed">
-                        <input type="text" placeholder="digite algum comentário">
-                        <button>enviar feedback</button>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td class="perfil">
-                        <img src="./imgs/instagram-line.png" alt="">
-                        <h1 class="perfilname">JoaoP</h1>
-                    </td>
-                    <td class="feed">
-                        <input type="text" placeholder="digite algum comentário">
-                        <button>enviar feedback</button>
-                    </td>
-                </tr>
-
-            </table>
+            <div id="feedbacks">
+                <table>
+                    <tr>
+                        <td class="perfil">
+                            <img src="./imgs/instagram-line.png" alt="">
+                            <h1 class="perfilname">JoaoP</h1>
+                        </td>
+                        <td class="feed">
+                            <input type="text" placeholder="digite algum comentário">
+                            <button>enviar feedback</button>
+                        </td>
+                    </tr>
+                </table>
+            
+            </div>
 
         </div>
     </div>
 
-    <script src="/script.js" type="module"></script>
 </body>
 </html>
