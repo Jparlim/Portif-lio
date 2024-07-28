@@ -1,4 +1,5 @@
-export class users {
+import { alerta, buttonContrate } from "../script.js"
+class users {
     constructor(root) {
         this.root = document.querySelector(root)
         this.table = this.root.querySelector('table')
@@ -35,7 +36,7 @@ export class usuario extends users {
             } else {
                 document.querySelector('.loginPage').classList.add('hide')
                 document.querySelector('.page.hide').classList.remove('hide')
-
+                document.querySelector('.texts h2').innerText = `seja bem vindo(a) ${valor}`
                 this.createsrc()
             }
         }

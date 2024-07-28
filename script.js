@@ -6,4 +6,7 @@ function alerta() {
     alert('Este projeto está em desenvolvimento!')
 }
 
-window.alerta = () => alerta()
+window.alerta = () => alerta();
+
+export { alerta, buttonContrate}
+

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <script src="spis.js/apiRoot.js" type="module" defer></script>
+    <script src="./SPI/apiRoot.js" type="module" defer></script>
 
     <title>SITE PESSOAL</title>
 </head>
 <body>
                         <!-- tirar o hide -->
-    <div class="loginPage">
+    <div class="loginPage hide">
         <img src="./imgs/whatsapp-line.png" alt="">
         <h1>entre com o nickname do github!</h1>
         <input type="text" id="username" placeholder="username from github">
@@ -19,12 +19,12 @@
     </div>
 
                 <!-- colocar o hide -->
-    <div class="page hide">
+    <div class="page">
         <div class="footer-top">
             <img class="logo" src="./imgs/grid-outline.svg" alt="">
             <div class="txt">
                 
-                <a onclick="alerta()">Sobre mim</a>
+                <a href="/sobre" onclick="rota()">Sobre mim</a>
                 <a onclick="alerta()">Certificados</a>
                 <a onclick="alerta()">Projetos</a>
                 <a onclick="alerta()">Feedbacks</a>
@@ -140,15 +140,15 @@
             <div class="imglogos">
                 <div>
                     <img src="./imgs/instagram-line.png" alt="">
-                    <p>instagram</p>
+                    <a href="https://www.instagram.com/jo4opaulo0/">instagram</a>
                 </div>
                 <div>
                     <img src="./imgs/mail-line.png" alt="">
-                    <p>email</p>    
+                    <a href="">e-mail</a>    
                 </div>
                     <div>
                     <img src="./imgs/whatsapp-line.png" alt="">
-                    <p>whatsapp</p>
+                    <a href="">whatsapp</a>
                 </div>
             </div>
 
@@ -170,6 +170,8 @@
 
         </div>
     </div>
+
+    <div id="app"></div>
 
 </body>
 </html>
