@@ -9,7 +9,7 @@ export class Apisweb {
         evento.preventDefault()
     
         window.history.pushState('', {}, evento.target.href)
-        
+
         this.handle()
     }
     

@@ -27,6 +27,11 @@ body {
     filter: blur(5px);
 }
 
+.page.hide-io {
+    visibility: hidden;
+    opacity: 0;
+}
+
 /**/
 
 .footer-top {
@@ -301,6 +306,11 @@ li div{
     align-items: center;
     display: flex;
     gap: 1rem;
+}
+
+.imglogos a {
+    text-decoration: none;
+    color: white;
 }
 
 /*feedbacks*/

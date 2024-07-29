@@ -9,8 +9,6 @@ new usuario("#feedbacks")
 const caminho = new Apisweb()
 
 caminho.add("/sobre", "./pages/sobremim.html")
-// caminho.add("/certificados", "./pages/sobremim.html")
-// caminho.add("/sobre", "./pages/sobremim.html")
-// caminho.add("/sobre", "./pages/sobremim.html")
+caminho.add("/index", "./pages/index.html")
 
 window.rota = () => caminho.rota()
