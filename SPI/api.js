@@ -1,4 +1,4 @@
-import { alerta, buttonContrate } from "../script.js"
+import { alerta, buttonContrate } from "../../script.js"
 class users {
     constructor(root) {
         this.root = document.querySelector(root)
