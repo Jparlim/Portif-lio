@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(#000000 0%, #01000c 50%, #030136 100%);
     background-repeat: no-repeat;
 }
@@ -18,6 +18,10 @@ body {
 
 .page {
     padding: 3rem 20rem;
+}
+
+.page2 {
+    height: 100vh;
 }
 
 /**/
@@ -164,4 +168,56 @@ img:hover {
     .page {
         padding: 0 2rem;
     }
+}
+
+/* transform imgs */
+
+.colun {
+    position: relative;
+}
+
+#one.hide {
+    transform: translate(7rem, 7rem);
+    scale: 4;
+    cursor: none;
+}
+
+#two.hide {
+    transform: translate(2rem, 7rem);
+    scale: 4;
+    cursor: none;
+}
+
+#three.hide {
+    transform: translate(-2rem, 7rem);
+    scale: 4;
+    cursor: none;
+}
+
+#four.hide {
+    transform: translate(-7rem, 7rem);
+    scale: 4;
+    cursor: none;
+}
+
+.X {
+    visibility: hidden;
+    opacity: 0;
+    cursor: none;
+}
+
+.X.hide {
+    visibility: visible;
+    opacity: 1;
+
+    cursor: pointer;
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+
+    top: 35.6rem;
+    right: 8rem;
+
+    transition: all 700ms;
 }
