@@ -177,7 +177,7 @@ img:hover {
 }
 
 #one.hide {
-    transform: translate(7rem, 7rem);
+    transform: translate(6.5rem, 7rem);
     scale: 4;
     cursor: none;
 }
@@ -189,7 +189,7 @@ img:hover {
 }
 
 #three.hide {
-    transform: translate(-2rem, 7rem);
+    transform: translate(-2.5rem, 7rem);
     scale: 4;
     cursor: none;
 }
@@ -201,23 +201,46 @@ img:hover {
 }
 
 .X {
+    display: none;
     visibility: hidden;
     opacity: 0;
+
     cursor: none;
+    
+    animation: popstart 1s ease;
 }
 
 .X.hide {
+    display: flex;
     visibility: visible;
     opacity: 1;
-
-    cursor: pointer;
+    
     position: absolute;
-
+  
+    cursor: pointer;
+    
     width: 35px;
     height: 35px;
+    top: 35rem;
+    right: 10.5rem;
+}
 
-    top: 35.6rem;
-    right: 8rem;
+@keyframes popstart {
+    from {
+        opacity: 0;
+    }
 
-    transition: all 700ms;
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popclose {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }

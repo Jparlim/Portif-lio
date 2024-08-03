@@ -2,19 +2,14 @@ function openimg(evento) {
     evento = window.event || event
     const lol = evento.target.id
     
-    if(lol === 'one') {
-        document.querySelector('#one').classList.add('hide')
-    } if(lol === 'two') {
-        document.querySelector('#two').classList.add('hide')
-    } if(lol === 'three') {
-        document.querySelector('#three').classList.add('hide')
-    } if(lol === 'four') {
-        document.querySelector('#four').classList.add('hide')
-    }
+    document.querySelector(`#${lol}`).classList.add('hide')
+
+    setTimeout(() => document.querySelector('.X').classList.add('hide'), 500);
 }
 
 function toclose() {
-    
+    document.querySelector('.X').classList.remove('hide')
 }
 
+window.toclose = () => toclose()
 window.openimg = () => openimg()
