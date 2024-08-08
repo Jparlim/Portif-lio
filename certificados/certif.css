@@ -176,53 +176,55 @@ img:hover {
     position: relative;
 }
 
-#one.hide {
-    transform: translate(6.5rem, 7rem);
+#one.imgflluter {
+    transform: translate(6.2rem, 7rem);
     scale: 4;
-    cursor: none;
+    cursor:auto;
 }
 
-#two.hide {
-    transform: translate(2rem, 7rem);
+#two.imgflluter {
+    transform: translate(1.8rem, 7rem);
     scale: 4;
-    cursor: none;
+    cursor: auto;
 }
 
-#three.hide {
+#three.imgflluter {
     transform: translate(-2.5rem, 7rem);
     scale: 4;
-    cursor: none;
+    cursor: auto;
 }
 
-#four.hide {
+#four.imgflluter {
     transform: translate(-7rem, 7rem);
     scale: 4;
-    cursor: none;
+    cursor: auto;
 }
 
-.X {
+#X {
     display: none;
     visibility: hidden;
     opacity: 0;
 
     cursor: none;
     
-    animation: popstart 1s ease;
+    animation: popclose 1s;
 }
 
-.X.hide {
+#X.hide {
     display: flex;
     visibility: visible;
     opacity: 1;
     
     position: absolute;
-  
+    
     cursor: pointer;
     
     width: 35px;
     height: 35px;
     top: 35rem;
     right: 10.5rem;
+    
+    animation: popstart 1s forwards;
 }
 
 @keyframes popstart {
@@ -234,7 +236,6 @@ img:hover {
         opacity: 1;
     }
 }
-
 @keyframes popclose {
     from {
         opacity: 1;
