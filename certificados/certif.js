@@ -1,18 +1,18 @@
+let selectedId = null; 
 
-/* ideia 1: quando o usuario clica em outro certificado e ja um ja estiver um com o flluter
-o sistema vai ver qual dos 4 certificados tem o hide, vai tira-lo e adicionar o hide no outro certificado
-que o usuario clicou*/
+/*a principio ele é null, ou seja, quando a função rodar na primeira vez
+ele será null, então no if ele sera igual a null, o que ja será suficiente pra 
+não entrar no código do if.
+após passar pelo if, o selectedID receberá o valor de alvo, ai vai começa a rodar o código!!*/
 
-/*ideia 2: quando o usuario clica no primeiro ceertificado o ID do certificado
-ficará salvo e quando o usuário clica em outro certificado será retirado o
-flluter do certificado 1 e colocara no certificado que o usuário clicou*/
 
 function analist(alvo) {
-    
-    
-
+    if(selectedId !== null && selectedId !== alvo) {
+        document.querySelector(`#${selectedId}`).classList.remove('imgflluter');
+    }
+    selectedId = alvo
+    console.log(selectedId)
 }
-
 
 function openimg(evento) {
     evento = window.event || event
