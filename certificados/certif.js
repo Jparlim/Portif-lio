@@ -1,17 +1,16 @@
 let selectedId = null; 
 
-/*a principio ele é null, ou seja, quando a função rodar na primeira vez
-ele será null, então no if ele sera igual a null, o que ja será suficiente pra 
-não entrar no código do if.
-após passar pelo if, o selectedID receberá o valor de alvo, ai vai começa a rodar o código!!*/
-
-
 function analist(alvo) {
     if(selectedId !== null && selectedId !== alvo) {
         document.querySelector(`#${selectedId}`).classList.remove('imgflluter');
+        document.querySelector("#X").classList.remove('hide')
     }
     selectedId = alvo
-    console.log(selectedId)
+}
+
+function toclose() {
+    document.querySelector(`#${selectedId}`).classList.remove("imgflluter")
+    document.querySelector("#X").classList.remove("hide")
 }
 
 function openimg(evento) {
@@ -22,9 +21,9 @@ function openimg(evento) {
     
     document.querySelector(`#${lol}`).classList.add('imgflluter')
     
-    setTimeout(() => document.querySelector('#X').classList.add('hide'), 500);
-    
+    setTimeout(() => document.querySelector('#X').classList.add('hide'), 500);   
 }
 
 
+window.toclose = () => toclose()
 window.openimg = () => openimg()
