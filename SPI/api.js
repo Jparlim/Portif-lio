@@ -30,6 +30,8 @@ export class usuario extends users {
         document.querySelector('.loginPage button').onclick = () => {
 
             const valor = document.querySelector('#username').value;
+            localStorage.setItem('user', valor)
+            // fazer a tela de login aparecer apenas uma vez e salvar o nome do usuário
 
             if(valor === '') {
                 alert('insira um nome!')
