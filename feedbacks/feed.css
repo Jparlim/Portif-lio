@@ -84,21 +84,7 @@ button:hover {
     
     transition: all 1s;
 }
-
-img {
-    width: 15rem;
-    height: 10rem;
-    object-fit:cover;
-    transition: all 1s;
-
-    cursor: pointer;
-}
-
-img:hover {
-    transition: all 700ms;
-    transform:scale(1.1);
-    /* transform: translate(120px, 50%); */
-}
+ 
 
 /*  */
 
@@ -184,4 +170,7 @@ img:hover {
 
 .coments img {
     margin: 1rem 0 2rem 0;
+
+    width: 10rem;
+    height: 8rem;
 }
