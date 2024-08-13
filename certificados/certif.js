@@ -24,6 +24,8 @@ function openimg(evento) {
     setTimeout(() => document.querySelector('#X').classList.add('hide'), 500);   
 }
 
+import { alerta } from "../script.js";
+
 
 window.toclose = () => toclose()
 window.openimg = () => openimg()

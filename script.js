@@ -3,7 +3,7 @@ let buttonContrate = document.querySelector('.footer-top button').addEventListen
 })
 
 function alerta() {
-    alert('Este projeto está em desenvolvimento!')
+    alert('Estea página está em desenvolvimento!')
 }
 
 window.alerta = () => alerta();
